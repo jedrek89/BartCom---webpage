@@ -13,6 +13,10 @@ html {
     top: 50%;
 }
 
+.hideItem{
+    display: none;
+}
+
 /* header{
     position: fixed;
     top: 0;
@@ -39,10 +43,10 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .headerLogoArea{
-    padding-left: 50px;
     width: 20%;
     height: 100px;
     display: flex;
@@ -51,7 +55,6 @@ header{
 
 .headerLogo{
     width: 200px;
-    
     height: 90px;
 }
 
@@ -129,7 +132,41 @@ header{
     font-weight: 600;
     transition-property: font-size 60px ;
     transition-duration: 2s;
+}
 
+.aboutMeButton{
+    all: unset;
+    margin-top: 30px;
+    background-color:#44c767;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+    color: rgb(255, 255, 255);
+    font-family: Cursive, Helvetica, sans-serif;
+	font-size:25px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    opacity: 0.9;
+}
+
+.aboutMeButton:hover{
+    background-color:#194826;
+    transition: all 0.5s;
+}
+
+.aboutMe{
+    margin-top: 30px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color:  rgb(40, 36, 36);
+    opacity: 0.9;
+    font-family: Cursive, Helvetica, sans-serif;
+	font-size:25px;
+    max-width: 1440px;
+    text-align: justify;
+    transition: all 0.5s;
 }
 
 @-webkit-keyframes slide {
@@ -205,6 +242,21 @@ header{
     
     .header2{
         font-size: 20px;
+    }
+
+    .content1{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .content2{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .content3{
+        width: 100%;
+        height: fit-content;
     }
 
 }
