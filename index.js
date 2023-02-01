@@ -14,3 +14,9 @@ document.getElementById('aboutMeButton').addEventListener('click', function() {
         document.getElementById('aboutMeDescription').classList.add('hideItem');
     }
 })
+
+
+document.getElementById('rwdButton').addEventListener('click', function() {
+    let element = document.getElementById('aboutMeDescription');
+
+})
