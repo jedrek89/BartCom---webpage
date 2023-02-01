@@ -41,6 +41,7 @@ header{
 .headerLogo{
     width: 200px;
     height: 90px;
+    cursor: pointer;
 }
 
 .headerMenu{
@@ -76,6 +77,10 @@ header{
     color: rgb(255, 106, 0);
 }
 
+.fbLogo{
+    cursor: pointer;
+
+}
 
 .content1{
     width: 100%;
@@ -100,6 +105,8 @@ header{
     min-width: 100%;
     max-width: 1440px;
     height: 100%;
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
 }
 
 .header1{
@@ -107,8 +114,6 @@ header{
     color: rgb(255, 255, 255);
     font-size: 90px;
     font-weight: 900;
-    transition-property: font-size 90px ;
-    transition-duration: 2s;
 }
 
 .header2{
@@ -116,8 +121,6 @@ header{
     color: rgb(255, 255, 255);
     font-size: 60px;
     font-weight: 600;
-    transition-property: font-size 60px ;
-    transition-duration: 2s;
 }
 
 .aboutMeButton{
@@ -132,35 +135,58 @@ header{
 	font-size:25px;
 	padding:16px 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+	text-shadow:0px 2px 0px #000000;
     opacity: 0.9;
+    transition: all 0.7s;
 }
 
 .aboutMeButton:hover{
     background-color:#194826;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
-.aboutMe{
+.aboutMeDescription{
     margin: 30px 0px 30px 0px;
     padding: 20px;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     background-color:  rgb(40, 36, 36);
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: Cursive, Helvetica, sans-serif;
 	font-size:25px;
     max-width: 1440px;
     text-align: justify;
-    transition: all 0.5s;
+    /* display: block; */
+    -webkit-animation: fadeIn80 1s;
+    animation: fadeIn80 1s;
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
+@-webkit-keyframes fadeIn80 {
+    from { opacity: 0; }
+    to { opacity: 0.8; }
+}
+@keyframes fadeIn80 {
+    from { opacity: 0; }
+    to { opacity: 0.8; }
 }
 
-@keyframes slide {
-    100% { left: 0; }
+@-webkit-keyframes fadeOut80 {
+    from { opacity: 0.8; }
+    to { opacity: 0; }
+}
+@keyframes fadeOut80 {
+    from { opacity: 0.8; }
+    to { opacity: 0; }
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .content2{
