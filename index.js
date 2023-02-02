@@ -13,4 +13,3 @@ document.getElementById('aboutMeButton').addEventListener('click', function() {
         document.getElementById('aboutMeDescription').classList.add('hideItem');
     }
 })
-
