@@ -1,7 +1,6 @@
-console.log("js works!");
 let showAboutMe;
 
-// document.getElementById("year").innerHTML = new Date().getFullYear() + " ";
+document.getElementById("year").innerHTML = new Date().getFullYear() + " ";
 
 document.getElementById('aboutMeButton').addEventListener('click', function() {
     let element = document.getElementById('aboutMeDescription');
@@ -14,3 +13,4 @@ document.getElementById('aboutMeButton').addEventListener('click', function() {
         document.getElementById('aboutMeDescription').classList.add('hideItem');
     }
 })
+

@@ -83,7 +83,7 @@ header{
 
 .fbLogo{
     cursor: pointer;
-
+    transform: scale(0.7);
 }
 
 .content1{
@@ -105,7 +105,7 @@ header{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    padding-top: 50px;
+    padding-top: 30px;
     align-items: center;
     min-width: 100%;
     max-width: 1440px;
@@ -213,7 +213,7 @@ header{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    padding-top: 50px;
+    padding-top: 30px;
     align-items: center;
     min-width: 100%;
     max-width: 1440px;
@@ -251,61 +251,91 @@ header{
 
 .content3{
     width: 100%;
-    height: calc(100vh - 90px);
-    background-color: rgb(119, 122, 127);
+    height: fit-content;
+    /* min-height: calc(100vh - 90px); */
+    max-height: fit-content;
+    /* padding-top: 90px; */
+    background-color: rgb(0, 0, 0);
 }
 
-/* .footer{
-    position: fixed;
-    bottom: 0;
+.header5{
+    font-family: Cursive, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.header6{
+    font-family: Cursive, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.contact{
+    margin: 30px 0px 30px 0px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color:  rgb(40, 36, 36);
+    opacity: 0.8;
+    font-family: Cursive, Helvetica, sans-serif;
+	font-size:30px;
+    max-width: 1440px;
+    min-width: 50%;
+    text-align: center;
+}
+
+.footer{
     width: 100%;
     height: fit-content;
-    padding-top: 2px 0px 2px 0px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     font-family: Cursive, Helvetica, sans-serif;
     font-size: 14px;
     text-decoration: none;
-} */
+}
+
+.footerLink{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
 
 /* responsive styles */
 @media screen and (max-width: 767px){
 
     header{
+        padding: 0px;
+        margin: 0;
         flex-direction: column;
         height: fit-content;
     }
 
     .headerLogoArea{
         padding: 0px;
+        margin: 0;
         width: 100%;
         height: fit-content;
-    }
-
-    .rwdButtonArea{
-        display: block;
-        right: 0;
-        align-self: center;
-        position: fixed;
-        right: 0;
-        padding-right: 10px;
+        justify-content: center;
     }
 
     .headerMenu{
-        display: none;
-    }
-
-    /* .ShowHeaderMenu{
         padding: 0px;
         margin: 0;
         width: 100%;
-        display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    } */
+    }
 
+    .topMenuItem{
+        padding-left: 5px;
+    }
+
+    .content1{
+        width: 100%;
+        height: fit-content;
+    }
 
     .box1{
         margin: auto;
@@ -323,9 +353,8 @@ header{
         font-size: 20px;
     }
 
-    .content1{
-        width: 100%;
-        height: fit-content;
+    .aboutMeDescription{
+        text-align: start;
     }
 
     .content2{
@@ -334,26 +363,28 @@ header{
     }
 
     .box2{
-        width: 100%;
+        margin: auto;
+        width: 90%;
         height: 100%;
-        padding-top: 150px;
+        padding-top: 100px;
+    }
+
+    .header3{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+    .header4{
+        font-size: 20px;
+    }
+
+    .servicesDescription{
+        text-align: start;
     }
 
     .content3{
         width: 100%;
-        height: fit-content;
+        height: justify;
     }
 
 }
-
-
-
-/* @media (min-width: 992px){
-
-}
-
-@media (min-width: 1366px){
-    .header{
-        flex-direction: column;
-    }
-} */
